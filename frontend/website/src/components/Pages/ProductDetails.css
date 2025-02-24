@@ -75,12 +75,22 @@ body {
     border-bottom: 1px solid rgb(230, 225, 225);
 }
 
-.product-price {
-    font-size: 24px;
+
+.product-original-price {
+    font-size: 18px;
     font-family: var(--secondary-font);
-    font-weight: 500;
+    font-weight: 400;
     margin-top: 10px;
     margin-bottom: 5px;
+    text-decoration: line-through;
+    color:#444;
+}
+
+.product-discounted-price{
+    font-size:20px;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    color:green;
 }
 
 .product-quantity {
@@ -88,6 +98,7 @@ body {
     font-family: var(--primary-font);
     margin-top: 10px;
     margin-bottom: 1px;
+    font-weight: 500;
 }
 
 .product-description {
@@ -172,6 +183,7 @@ button,
 .buy-now:hover {
     transform: translateY(-2px);
     box-shadow: 0px 6px 10px rgba(3, 47, 204, 0.5);
+    transform: scale(1.02);
 }
 
 /* Save Changes button - Green Primary Color */
@@ -181,6 +193,8 @@ button,
 
 .save-changes:hover {
     transform: translateY(-2px);
+    transform: scale(1.02);
+
 }
 
 /* Edit and Cancel Buttons */
@@ -188,14 +202,32 @@ button,
     background: linear-gradient(to right, #2046ee, #0827b3);
 }
 
+.edit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 10px rgba(3, 47, 204, 0.5);
+    transform: scale(1.02);
+}
 .cancel-edit {
     background: linear-gradient(to right, #dc3545, #b22222);
+}
+
+.cancel-edit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 10px rgba(3, 47, 204, 0.5);
+    transform: scale(1.02);
 }
 
 /* Delete Button Styles */
 .delete-button {
     background: linear-gradient(to right, red, rgb(197, 6, 6));
 }
+
+.delete-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+}
+
 
 /* Loading and Error Messages */
 .loading {

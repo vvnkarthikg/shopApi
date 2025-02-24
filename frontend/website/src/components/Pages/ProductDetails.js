@@ -141,8 +141,8 @@ const ProductDetails = () => {
                                 product.name
                             )}
                         </h3>
-                        <p className="product-price">
-                            ₹{isEditing ? (
+                        <div className="price-container">
+                            {isEditing ? (
                                 <input
                                     type="number"
                                     value={editedPrice}
@@ -150,9 +150,12 @@ const ProductDetails = () => {
                                     min="0"
                                 />
                             ) : (
-                                product.price
+                                <div className="product-prices">
+                                    <span className="product-original-price">₹{product.price}</span>
+                                    <span className="product-discounted-price">  ₹{discountedPrice}</span>
+                                </div>
                             )}
-                        </p>
+                        </div>
                         <p className="product-quantity">
                             {isEditing ? (
                                 <input
