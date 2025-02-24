@@ -74,7 +74,7 @@
 .auth-submit-btn {
   width: 100%;
   padding: 12px;
-  background-color: #0C08F3 !important;
+  background: linear-gradient(to right, #2522b5, #2620d0);
   color: white;
   border: none;
   border-radius: 5px;
@@ -90,6 +90,7 @@
 
 .auth-submit-btn:hover {
   background-color: #0b08b6 !important;
+  transform: scale(1.01);
 }
 
 .auth-switch-text {
@@ -117,7 +118,7 @@
   color: white;
   border-radius: 5px;
   margin-left: 5px;
-  padding-left:15px;
+  padding:10px !important;
 }
 
 .auth-error-message {
