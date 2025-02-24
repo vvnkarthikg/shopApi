@@ -1,0 +1,54 @@
+/* Ensure full height for the layout */
+html, body, #root {
+    height: 100%; /* Ensure that the body and root elements take the full height */
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper for the entire layout */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
+}
+
+/* Main content area should take up remaining space */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    padding-bottom: 5rem; /* Add bottom padding to create space above the footer */
+}
+
+/* Footer styling */
+.footer-container {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    flex-shrink: 0;  /* Prevents the footer from shrinking */
+    margin-top: auto;  /* Ensures footer is pushed to the bottom */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 8px 0;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.footer-content a {
+    color: #f8d210;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}

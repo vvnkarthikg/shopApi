@@ -1,0 +1,105 @@
+/* src/SearchBar.css */
+.searchbar-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    flex-grow: 1; /* Allow it to take up remaining space */
+    position: relative; /* Position relative for dropdown */
+}
+
+.searchbar-input {
+    padding: 8px 40px 8px 10px; /* Add padding for text and space for icon */
+    outline: none;
+    border: 1px solid #ccc; /* Border around input */
+    border-radius: 4px; /* Rounded corners */
+    flex-grow: 1; /* Allow input to take available space */
+}
+
+.searchbar-input::placeholder {
+    color: #6f7373; /* Change this to your desired color */
+    font-family: 'Noto Sans','Roboto', sans-serif; /* Change this to your desired font family */
+    font-size: 14px; /* Adjust the font size */
+    font-style: light; /* Optional: Add styling like italic */
+}
+
+.search-input:focus {
+    outline: none;
+    border: 200px solid #d1a93e; /* Highlight color */
+    box-shadow: 0 0 5px rgba(209, 169, 62, 0.8); /* Glowing effect */
+    background-color: red; /* Light yellow background */
+    transition: all 0.3s ease-in-out;
+  }
+
+/* Style for the search icon container */
+.search-icon {
+    position: absolute; /* Position inside input */
+    right: 8px; /* Space from right edge */
+    top: 50%; /* Center vertically */
+    transform: translateY(-40%); /* Align properly */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    width: 30px; /* Larger width */
+    height: 30px; /* Larger height */
+    background-color: #87CEEB; /* Sky Blue */
+    border-radius: 50%; /* Circular shape */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out; /* Smooth transition */
+}
+
+/* Style for the search icon */
+.search-icon svg {
+    color: #fff; /* White icon */
+    font-size:18 px; /* Larger icon size */
+}
+
+/* Hover Effect */
+.search-icon:hover {
+    background-color: #00BFFF; /* Deep Sky Blue */
+    transform: translateY(-40%) scale(1.1); /* Slightly enlarge on hover */
+}
+
+
+
+/* Search Results Styles */
+.searchbar-results {
+    position: absolute; /* Position relative to the search container */
+    top: calc(100% + 5px); /* Place it directly below the search input with a small gap */
+    left: 0; /* Align to the left of the search container */
+    width: calc(100% - 2px); /* Set width to match input width */
+    max-height: 200px; /* Limit height of results dropdown */
+    overflow-y: auto; /* Scroll if necessary */
+    background-color: white; /* Default background color for results */
+    border: 1px solid #ccc; /* Border for dropdown */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Shadow for dropdown */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.searchbar-item {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Spacing for items */
+    color: black; /* Default font color is black */
+    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Light border at the bottom of each item (almost invisible) */
+
+}
+
+
+
+.searchbar-item:hover {
+    background-color: #ebe6e6; /* Change background on hover to gray */
+    font-weight: bold;
+}
+
+.searchbar-product-image {
+    width: 40px; /* Set a fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between image and text */
+}
+
+/* Style for arrow symbol with rotation and thickness adjustment */
+.arrow-symbol {
+    margin-left: auto; /* Push arrow symbol to the right end of the item */
+    transform: rotate(-45deg); /* Rotate arrow by -45 degrees (northeast) */
+}

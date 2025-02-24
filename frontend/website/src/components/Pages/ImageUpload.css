@@ -1,0 +1,21 @@
+
+
+.image-preview {
+    margin-top: 5px;
+    width: 250px; /* Width of image preview */
+    height: 250px; /* Height of image preview */
+    border-radius: 50%; /* Circular shape for image preview */
+}
+
+.image-placeholder {
+   width: 250px;
+   height: 250px;
+   background-color: #e0e0e0;
+   border-radius: 50%; /* Circular shape */
+   border: 1px solid rgb(108, 107, 107); 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: black;
+   font-weight: 500;
+}

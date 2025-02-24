@@ -1,0 +1,173 @@
+/* UserProfile Component Styles */
+
+body {
+   background: linear-gradient(to bottom, white, #f5f7fa);
+   font-family: "Roboto", sans-serif;
+}
+
+.user-profile-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+}
+
+.user-profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #05274b;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.user-profile-form-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.user-profile-upload-section {
+    flex: 1;
+}
+
+.user-profile-details-section {
+    flex: 2;
+}
+
+.user-profile-field-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-profile-field {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(50% - 10px);
+}
+
+.user-profile-field-row > .user-profile-field {
+    margin-right: 10px;
+}
+
+.user-profile-field:last-child {
+    margin-right: 0;
+}
+
+.user-profile-field label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.user-profile-value {
+    display: inline-block;
+    background-color: #f0f2f5;
+    padding: 10px;
+    border-radius: 6px;
+    color: #333;
+    font-size: 1rem;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile-field input[type="text"],
+.user-profile-field input[type="tel"],
+.user-profile-field input[type="email"] {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    transition: border 0.3s ease-in-out;
+    font-size: 1rem;
+}
+
+.user-profile-field input[type="text"]:focus,
+.user-profile-field input[type="tel"]:focus,
+.user-profile-field input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+.user-profile-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.user-profile-actions button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.user-profile-actions button[type="submit"] {
+    background-color: #05274b;
+    color: white;
+    width: 100%;
+}
+
+.user-profile-actions button[type="submit"]:hover {
+    background-color: #031a34;
+}
+
+.user-profile-actions button[type="button"] {
+    background-color: #28a745;
+    color: white;
+}
+
+.user-profile-actions button[type="button"]:hover {
+    background-color: #218838;
+}
+
+.user-profile-edit-button {
+   background: linear-gradient(to right, #2522b5, #2620d0);
+   color: white;
+}
+
+.user-profile-edit-button:hover {
+    background-color: #0056b3;
+}
+
+.user-profile-actions button.cancel {
+    background-color: #dc3545;
+}
+
+.user-profile-actions button.cancel:hover {
+    background-color: #c82333;
+}
+
+.user-profile-container p {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .user-profile-form-layout {
+        flex-direction: column;
+    }
+
+    .user-profile-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .user-profile-field input[type="text"],
+    .user-profile-field input[type="tel"],
+    .user-profile-field input[type="email"] {
+        font-size: 0.9rem;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .user-profile-actions button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
